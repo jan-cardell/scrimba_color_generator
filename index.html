@@ -5,18 +5,25 @@
     </head>
     <body>
         <form id="input-form">
-            <input type="color" id="input-color"/>
+            <input type="color" id="input-color" value="#F55A5A"/>
             <select name="schemes" id="input-scheme">
-                <option value="Monochrome">Monochrome</option>
-                <option value="Monochrome-dark">Monochrome-dark</option>
-                <option value="Monochrome-light">Monochrome-light</option>
-                <option value="Analogic">Analogic</option>
-                <option value="Complement">Complement</option>
-                <option value="Analogic-complement">Analogic-complement</option>
-                <option value="Triad">Triad</option>
+                <option value="monochrome">Monochrome</option>
+                <option value="monochrome-dark">Monochrome-dark</option>
+                <option value="monochrome-light">Monochrome-light</option>
+                <option value="analogic">Analogic</option>
+                <option value="complement">Complement</option>
+                <option value="analogic-complement">Analogic-complement</option>
+                <option value="triad">Triad</option>
             </select>
             <button>Get color scheme</button>
         </form>
+        <div id='color-out'>
+            <div id="color1" class="colors"></div>
+            <div id="color2" class="colors"></div>
+            <div id="color3" class="colors"></div>
+            <div id="color4" class="colors"></div>
+            <div id="color5" class="colors"></div>
+        </div>
         <script src="index.js"></script>
     </body>
 </html>

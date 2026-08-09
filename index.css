@@ -1,0 +1,28 @@
+#color-out {
+    display: flex;
+}
+
+.colors {
+    height: 110px;
+    width: 20%;
+}
+
+#color1 {
+    background-color: #F55A5A;
+}
+
+#color2 {
+    background-color: #2B283A;
+}
+
+#color3 {
+    background-color: #FBF3AB;
+}
+
+#color4 {
+    background-color: #AAD1B6;
+}
+
+#color5 {
+    background-color: #A626D3;
+}
