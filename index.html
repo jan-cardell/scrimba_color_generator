@@ -21,18 +21,21 @@
             <button>Get color scheme</button>
         </form>
         <div id='color-out'>
-            <div id="color-set" class="colors"></div>
-            <div id="color0" class="colors"></div>
-            <div id="color1" class="colors"></div>
-            <div id="color2" class="colors"></div>
-            <div id="color3" class="colors"></div>
+            <div id="color-set" class="colors" data-copy="hex-set"></div>
+            <div id="color0" class="colors" data-copy="hex0"></div>
+            <div id="color1" class="colors" data-copy="hex1"></div>
+            <div id="color2" class="colors" data-copy="hex2"></div>
+            <div id="color3" class="colors" data-copy="hex3"></div>
         </div>
         <div id="hex-codes">
-            <p id="hex-set" class="hex">#F55A5A</p>
-            <p id="hex0" class="hex">#2B283A</p>
-            <p id="hex1" class="hex">#FBF3AB</p>
-            <p id="hex2" class="hex">#AAD1B6</p>
-            <p id="hex3" class="hex">#A626D3</p>
+            <p id="hex-set" class="hex" data-copy="hex-set">#F55A5A</p>
+            <p id="hex0" class="hex" data-copy="hex0">#2B283A</p>
+            <p id="hex1" class="hex" data-copy="hex1">#FBF3AB</p>
+            <p id="hex2" class="hex" data-copy="hex2">#AAD1B6</p>
+            <p id="hex3" class="hex" data-copy="hex3">#A626D3</p>
+        </div>
+        <div id="copy-message">
+            <p>Copied!</p>
         </div>
         <script src="index.js"></script>
     </body>

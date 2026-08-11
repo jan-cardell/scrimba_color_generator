@@ -89,5 +89,21 @@ form button:hover, #input-scheme:hover{
 
 .colors:hover {
     filter: brightness(0.95);
+    cursor: pointer;
 }
 
+#input-color {
+    cursor: pointer;
+} 
+
+#copy-message {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    right: 0;
+    width: max-content;
+    margin-inline: auto;
+    background-color: lightgreen;
+    padding: 0.1rem 2rem;
+    display: none;
+}

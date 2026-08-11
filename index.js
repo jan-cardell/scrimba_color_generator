@@ -1,5 +1,16 @@
-
 const inputForm = document.getElementById('input-form')
+
+document.addEventListener('click', function(e){
+    if(e.target.dataset.copy){
+       handleCopy(e.target.dataset.copy) 
+       document.getElementById('copy-message').style.display = 'inline'
+       setTimeout(() => {document.getElementById('copy-message').style.display = 'none'
+        
+       }, 3000);
+       
+        
+    }
+})
 
 inputForm.addEventListener('submit', function(e){
     e.preventDefault()
@@ -8,12 +19,16 @@ inputForm.addEventListener('submit', function(e){
     
     document.getElementById('color-set').style.backgroundColor= inputColor
     document.getElementById('hex-set').innerText = inputColor
-
+    
     fetch (`https://www.thecolorapi.com/scheme?hex=${inputColor.slice(1)}&mode=${inputScheme}&count=4`)
-        .then(res => res.json())
-        .then(function(data){ data.colors.forEach(function(color, index){
-            document.getElementById(`color${index}`).style.backgroundColor= color.hex.value
-            document.getElementById(`hex${index}`).innerText= color.hex.value
-        })
-        })
+    .then(res => res.json())
+    .then(function(data){ data.colors.forEach(function(color, index){
+        document.getElementById(`color${index}`).style.backgroundColor= color.hex.value
+        document.getElementById(`hex${index}`).innerText= color.hex.value
+    })
 })
+})
+
+function handleCopy(colorID){
+    navigator.clipboard.writeText(document.getElementById(colorID).textContent)
+}
